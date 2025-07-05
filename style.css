@@ -1,0 +1,92 @@
+
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  z-index: 1000;
+}
+
+.left,
+.center,
+.right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  height: 60px;
+}
+
+.center input {
+  padding: 6px 12px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+}
+
+.search-btn {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-left: none;
+  background-color: #eee;
+  border-radius: 0 20px 20px 0;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain; /* ou use "cover" se preferir preencher tudo */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 50%;
+}
+
+.icon:hover {
+  background-color: #f1f1f1;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  gap: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.icon:hover {
+  background-color: #f1f1f1;
+}
+
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.avatar:hover {
+  background-color: #f1f1f1;
+}
+
+
+
+

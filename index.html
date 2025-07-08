@@ -1,75 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="HTML, CSS ,semantica e acessibilidade">
-  <meta name="author" content="Fernanda Linhares">
-  <title>YouTube Clone</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="header">
-    <div class="left">
-      <button class="menu-btn" aria-label="Abrir menu">☰</button>
-      <figure>
-        <img src="data:image/png;base64,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" alt="Logo do YouTube" class="logo">
-      </figure>
-    </div>
-
-    <div class="center">
-      <input type="text" placeholder="Pesquisar" aria-label="Pesquisar">
-      <button class="search-btn">🔍</button>
-    </div>
-
-    <div class="right">
-        <figure>
-            <img src="./assets/video-icon.jfif" alt="Icone video" class="icon" >
-        </figure>
-        <figure>
-            <img src="./assets/sino-icon.png" alt="Sino notidicação" class="icon">
-        </figure>
-        <figure>
-            <img src="./assets/perfil3x4.jpg" alt="Avatar do usuário logado" class="avatar" >
-        </figure>
-    </div>
-  </header>
-  <div class="container">
-  <main class="video-principal">
-    <iframe 
-    width="560"
-    height="315" 
-    src="https://www.youtube.com/embed/YbiruOyg9H4?si=5UDmR4hMYsYkxSy_&amp;start=3" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen>    
-    </iframe>
-  </main>
-  <aside class="video-lista">
-  <div class="video-card">
-    <img src="./assets/thumb1.jpg" alt="Miniatura do vídeo">
-    <div class="info">
-      <h3>Título do vídeo</h3>
-      <p>Canal do vídeo</p>
-    </div>
-  </div>
-</aside>
-
-
-
-  <aside class="video-lista">
-    
-  </aside>
-</div>
-
-  
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -127,27 +55,7 @@
       </div>
     </section>
 
-    <aside class="video-lista">
-      <article class="video-card">
-        <figure>
-          <img src="./assets/thumb1.jpg" alt="Miniatura do vídeo 1">
-        </figure>
-        <div class="info">
-          <h3>Título 1</h3>
-          <p>Canal 1</p>
-        </div>
-      </article>
-      <article class="video-card">
-        <figure>
-          <img src="./assets/thumb2.jpg" alt="Miniatura do vídeo 2">
-        </figure>
-        <div class="info">
-          <h3>Título 2</h3>
-          <p>Canal 2</p>
-        </div>
-      </article>
-      <!-- Adicione mais vídeos conforme necessário -->
-    </aside>
+  
   </main>
 
 </body>

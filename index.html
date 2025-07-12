@@ -6,8 +6,10 @@
   <meta name="keywords" content="HTML, CSS, semântica, acessibilidade">
   <meta name="author" content="Fernanda Linhares">
   <title>YouTube Clone</title>
-  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -25,15 +27,14 @@
     </div>
 
     <div class="right">
-      <figure>
-        <img src="./assets/video-icon.jfif" alt="Ícone de vídeo" class="icon">
-      </figure>
-      <figure>
-        <img src="./assets/sino-icon.png" alt="Sino de notificação" class="icon">
-      </figure>
-      <figure>
-        <img src="./assets/perfil3x4.jpg" alt="Avatar do usuário" class="avatar">
-      </figure>
+        <figure>
+          <span class="material-icons" aria-label="Criar vídeo">videocam</span>
+        </figure>
+        <figure>
+          <span class="material-icons" aria-label="Notificações">notifications</span>
+        </figure>
+
+      <figure><img src="./assets/perfil3x4.jpg" alt="Avatar do usuário" class="avatar"></figure>
     </div>
   </header>
 
@@ -45,19 +46,81 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen>
       </iframe>
-      <h2>Apuama Rafting</h2>
-      <p>Descrição do vídeo, informações do canal e outros detalhes.</p>
-      <div class="video-icons">
-        <img src="./assets/like-icon.png" alt="Curtir">
-        <img src="./assets/dislike-icon.png" alt="Não curtir">
-        <img src="./assets/share-icon.png" alt="Compartilhar">
-        <img src="./assets/save-icon.png" alt="Salvar">
+      <div class="titulo">      
+        <h2>Apuama Rafting- uma aventura de muita adrenalina e emoção!</h2>
+       
       </div>
+     
+      <div class="video-infos">
+       <div class="canal-info">
+          <img src="./assets/logo.jpg" alt="Logo do canal" class="canal-logo">
+            <div class="canal-texto">
+              <p class="nome-canal">Apuama</p>
+              <p class="inscritos">83,3 mil inscritos</p>
+          </div>
+        </div>
+      <div class="btn-inscrever">
+         <button>INSCREVA-SE</button>
+      </div>
+
+      <div class="video-icons">
+        <span class="material-icons" aria-label="Curtir">thumb_up</span>
+        <span class="material-icons" aria-label="Não curtir">thumb_down</span>
+        <span class="material-icons" aria-label="Compartilhar">share</span>
+        <span class="material-icons" aria-label="Salvar">download</span>
+    </div>
+
+  </div>
+  <div class="descricao">
+     <p>O Rafting de Aventura no rio Cubatão do Sul, oferece excelentes corredeiras e pode ser praticado por maiores de 10 anos dependendo do nível do rio.
+      Num cenário exuberante entre montanhas cobertas pela mata atlântica.
+      Este roteiro pode ser feito de acordo com o seu perfil. Os condutores da atividade farão um passeio personalizado para você, </p>
+  </div>
+
+
+     
+      <div class="video-icons">
     </section>
 
-  
+    <aside class="video-lista">
+      <article class="video-card">
+        <figure><img src="./assets/foto_rafting.JPG" alt="foto_rafting"></figure>
+        <div class="info">
+          <h3>Rafting Aventura</h3>
+          <p>Apuama</p>
+          <p>10 mil visualizações</p>
+          <p>Transmitido há 1 dia</p>
+        </div>
+      </article>
+      <article class="video-card">
+        <figure><img src="./assets/cachoeira-rio-vermelho.jpg" alt="Foto cachoeira do Rio Vermelho"></figure>
+        <div class="info">
+          <h3>Cachoeira Rio Vermelho</h3>
+          <p>Apuama</p>
+          <p>20 mil visualizações</p>
+          <p>Transmitido há 3 dia</p>
+        </div>
+      </article>
+      <article class="video-card">
+        <figure><img src="./assets/Arvorismo kids.jpeg" alt="Arvorismo kids"></figure>
+        <div class="info">
+          <h3>Arvorismo Kids</h3>
+          <p>Apuama</p>
+          <p>30 mil visualizações</p>
+          <p>Transmitido há 10 dia</p>
+        </div>
+      </article>
+      <article class="video-card">
+        <figure><img src="./assets/arvorismo.jpg" alt="Arvorismo"></figure>
+        <div class="info">
+          <h3>Arvorismo</h3>
+          <p>Apuama</p>
+          <p>100 mil visualizações</p>
+          <p>Transmitido há 15 dia</p>
+        </div>
+      </article>
+    </aside>
   </main>
 
 </body>
 </html>
-
